@@ -39,21 +39,21 @@ const Portfolio = () => {
   return (
     <>
         <motion.div initial="hidden" whileInView="show" variants={main} className="my-20 overflow-hidden">
-            <motion.h1 variants={child} className='text-5xl font-medium leading-normal text-center text-transparent md:text-6xl lg:text-8xl bg-clip-text bg-gradient-to-r from-gray-50 to-gray-400'>Posledné projekty.</motion.h1>
+            <motion.h1 variants={child} className='text-5xl font-medium leading-normal text-center text-transparent md:text-6xl 3xl:text-8xl bg-clip-text bg-gradient-to-r from-gray-50 to-gray-400'>Posledné projekty.</motion.h1>
         </motion.div>
         <motion.div variants={container}
     initial="hidden"
     whileInView="show" className="relative grid w-full grid-cols-1 lg:grid-cols-3">
             {recentProjects.map((project, index) => (
-                <motion.div variants={item} key={index} className="aspect-[2/3] relative flex cursor-pointer overflow-hidden group">
+                <motion.div variants={item} key={index} className="aspect-square lg:aspect-[2/3] relative flex cursor-pointer overflow-hidden group">
                     <img src={project.imgUrl} className="object-cover w-full duration-300 group-hover:scale-105 grayscale"/>
                     <div className="absolute z-[1] flex md:gap-3 px-5 pt-3 md:pt-6">
-                        <h1 className="order-2 text-2xl font-extralight md:text-5xl lg:text-4xl">{project.title}</h1>
-                        <h2 className="order-1 mr-3 font-bold text-7xl md:text-9xl lg:text-8xl">0{index + 1}</h2>
+                        <h1 className="order-2 text-2xl font-extralight md:text-5xl lg:text-3xl 3xl:text-4xl">{project.title}</h1>
+                        <h2 className="order-1 mr-3 font-bold text-7xl md:text-9xl lg:text-7xl 3xl:text-8xl">0{index + 1}</h2>
                     </div>
-                    <div className="absolute z-[1] left-12 top-28 md:top-44 lg:top-36">
+                    <div className="absolute z-[1] left-12 top-28 md:top-44 lg:top-32 max-h-40 md:max-h-min overflow-hidden">
                         <svg width="4" height="286" viewBox="0 0 4 286" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="2" y1="0.996582" x2="2" y2="285.997" stroke="white" strokeWidth="4"/>
+                            <line x1="2" y1="0.996582" x2="2" y2="285.997" stroke="white" strokeWidth="3"/>
                         </svg>
                     </div>
                     <div className="absolute top-0 left-0 w-full h-full bg-black/30">

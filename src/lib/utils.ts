@@ -19,7 +19,7 @@ export const main = {
 export const child = {
   hidden: {
     y: "160%",
-    skewY: "10deg",
+    skewY: "6deg",
   },
   show: {
     y: "0%",
