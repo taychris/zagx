@@ -62,7 +62,7 @@ const Portfolio = () => {
                 </motion.div>
             ))}
             
-            <Button href="/portfolio" className="absolute bottom-5 right-5">Portfolio</Button>
+            <Button href="/" className="absolute bottom-5 right-5">Portfolio</Button>
         </motion.div>
     </>
   )
